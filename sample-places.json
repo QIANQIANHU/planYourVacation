@@ -1,14 +1,14 @@
 
   { "places": [{
-      "ImageUrl": "img",
-      "wikiUrl": "wiki",
-      "name": "Rome",
+      "imageUrl": "imglink",
+      "wikiUrl": "wikilink",
+      "name": "ExamplePlace",
       "description":
         "When you visit the Eternal City, prepare to cross a few must-see attractions – the Colosseum, the Trevi Fountain and the Pantheon, to name a few – off your bucket list. Additional treasures like St. Peter's Basilica and the Sistine Chapel can be found in nearby Vatican City."
     },
     {
-        "ImageUrl": "https://images.unsplash.com/photo-1504465669713-b40b83b40eae?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dd83a7f71ce90316d3053b1c803ba561&auto=format&fit=crop&w=2700&q=80",
-        "wikiUrl": "wiki",
+        "imageUrl": "https://images.unsplash.com/photo-1504465669713-b40b83b40eae?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dd83a7f71ce90316d3053b1c803ba561&auto=format&fit=crop&w=2700&q=80",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Rome",
         "name": "Rome",
         "description":
           "When you visit the Eternal City, prepare to cross a few must-see attractions – the Colosseum, the Trevi Fountain and the Pantheon, to name a few – off your bucket list. Additional treasures like St. Peter's Basilica and the Sistine Chapel can be found in nearby Vatican City."

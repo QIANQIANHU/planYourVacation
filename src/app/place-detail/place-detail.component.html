@@ -1,6 +1,6 @@
  <div>
- <h3>{{(placeToDisplay | async)?.img}}</h3>
- <h4>{{(placeToDisplay | async)?.wiki}}</h4>
+ <h3>{{(placeToDisplay | async)?.imageUrl}}</h3>
+ <p><a href="{{(placeToDisplay | async)?.wikiUrl}}">{{(placeToDisplay | async)?.wikiUrl}}</a></p>
  <p>{{(placeToDisplay | async)?.name}}</p>
  <p>{{(placeToDisplay | async)?.description}}</p>
  </div>
