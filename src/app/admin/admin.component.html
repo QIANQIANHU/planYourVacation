@@ -1,0 +1,30 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3>Add New Place to list</h3>
+    <div>
+      <div>
+        <label>Place Image:</label>
+        <br>
+        <input #newImg>
+      </div>
+
+      <div>
+        <label>Place Wikipedia:</label>
+        <br>
+        <input #newWiki>
+      </div>
+
+      <div>
+        <label>Place Name:</label>
+        <br>
+        <textarea #newName></textarea>
+      </div>
+      <div>
+        <label>Place Description:</label>
+        <br>
+        <textarea #newDescription></textarea>
+      </div>
+            <button (click)="submitForm(newImg.value, newWiki.value, newName.value, newDescription.value); newImg.value=''; newWiki.value='';newName.value=''; newDescription.value=''">Add</button>
+    </div>
+  </div>
+</div>

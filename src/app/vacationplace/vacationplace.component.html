@@ -1,0 +1,10 @@
+<p>
+  Here's some ideas about places you might like to visit, even for 5 minutes!
+</p>
+
+<div *ngFor="let place of places | async" (click)="goToDetailPage(place)" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{place.name}}</em></h3>
+    <p>{{place.description}}</p>
+  </div>
+</div>

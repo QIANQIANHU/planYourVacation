@@ -5,29 +5,31 @@ import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-// import { AboutComponent } from './about/about.component';
-// import { VacationplaceComponent }   from './vacationplace/vacationplace.component';
-// import { PlaceDetailComponent }   from './place-detail/place-detail.component';
-// import { masterFirebaseConfig } from './api-keys';
-// import { AngularFireModule } from 'angularfire2';
-// import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AboutComponent } from './about/about.component';
+import { VacationplaceComponent } from './vacationplace/vacationplace.component';
+import { PlaceDetailComponent } from './place-detail/place-detail.component';
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AdminComponent } from './admin/admin.component';
 // import { AdminComponent } from './admin/admin.component';
 // import { EditPlaceComponent } from './edit-place/edit-place.component';
 
-// export const firebaseConfig = {
-//   apiKey: masterFirebaseConfig.apiKey,
-//   authDomain: masterFirebaseConfig.authDomain,
-//   databaseURL: masterFirebaseConfig.databaseURL,
-//   storageBucket: masterFirebaseConfig.storageBucket
-// };
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
-    // AboutComponent,
-    // VacationplaceComponent,
-    // PlaceDetailComponent,
+    AboutComponent,
+    VacationplaceComponent,
+    PlaceDetailComponent,
+    AdminComponent,
     // AdminComponent,
     // EditPlaceComponent
   ],
@@ -36,8 +38,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
     FormsModule,
     HttpModule,
     routing,
-    // AngularFireModule.initializeApp(firebaseConfig),
-    // AngularFireDatabaseModule
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,14 @@
+.base {
+  background-image: url("vacation.jpg");
+  background-size: 100%;
+}
+ p {
+   font-family: monospace;
+   font-style: italic;
+ }
+h1, h2, a {
+  font-family: monospace;
+}
+/*.navbar navbar-default{
+
+}*/

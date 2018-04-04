@@ -1,22 +1,25 @@
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" routerLink="">Day Dream Inspiration</a>
+<div class="base">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+          <img style="float: left" width="50" alt="Metacritic Logo" src="https://www.cascada.travel/sites/default/files/media/sustainable%20tourism%20development%20logo.jpg">
+        <a class="navbar-brand" routerLink="">Day Dream Homepage</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a routerLink="about">Our story</a></li>
+        <li><a routerLink="vacationplace">inspirations</a></li>
+      </ul>
     </div>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a routerLink="about">Our story</a></li>
-      <li><a routerLink="marketplace">Place should go</a></li>
-    </ul>
-  </div>
-</nav>
+  </nav>
 
-<div class="container">
-  <h1>{{title}}</h1>
-  <router-outlet></router-outlet>
-</div>
-
-<footer class="footer">
   <div class="container">
-    <a class="text-muted" routerLink="admin">Admin</a>
+    <h1>{{title}}</h1>
+    <router-outlet></router-outlet>
   </div>
-</footer>
+
+  <footer class="footer">
+    <div class="container">
+      <a class="text-muted" routerLink="admin">Admin</a>
+    </div>
+  </footer>
+</div>

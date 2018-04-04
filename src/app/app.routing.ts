@@ -1,10 +1,10 @@
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
-// import { AboutComponent }   from './about/about.component';
-// import { VacationplaceComponent }   from './vacationplace/vacationplace.component';
-// import { PlaceDetailComponent }   from './place-detail/place-detail.component';
-// import { AdminComponent }   from './admin/admin.component';
+import { AboutComponent } from './about/about.component';
+import { VacationplaceComponent }   from './vacationplace/vacationplace.component';
+import { PlaceDetailComponent }   from './place-detail/place-detail.component';
+import { AdminComponent }   from './admin/admin.component';
 
 const appRoutes: Routes = [
   {
@@ -12,25 +12,25 @@ const appRoutes: Routes = [
     component: WelcomeComponent
   },
 
-  // {
-  //   path: 'about',
-  //   component: AboutComponent
-  // },
-  //
-  // {
-  //   path: 'vacationplace',
-  //   component: VacationplaceComponent
-  // },
-  //
-  // {
-  //   path: 'places/:id',
-  //   component: PlaceDetailComponent
-  // },
-  //
-  // {
-  //   path: 'admin',
-  //   component: AdminComponent
-  // }
+  {
+    path: 'about',
+    component: AboutComponent
+  },
+
+  {
+    path: 'vacationplace',
+    component: VacationplaceComponent
+  },
+
+  {
+    path: 'places/:id',
+    component: PlaceDetailComponent
+  },
+
+  {
+    path: 'admin',
+    component: AdminComponent
+  }
 
 
  ];
