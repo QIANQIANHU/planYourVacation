@@ -1,0 +1,17 @@
+
+.frame {
+  margin: 5px;
+  border: 1px;
+  padding: 10px;
+  content: 20px;
+  background-color: white;
+
+}
+img {
+  max-height: 450px;
+ width: 320px;
+ height: auto;
+}
+.nameOfPlace {
+
+}

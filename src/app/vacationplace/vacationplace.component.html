@@ -1,14 +1,22 @@
 <p>
   Here's some ideas about places you might like to visit, even for 5 minutes!
 </p>
+<div class="row">
+    <div *ngFor="let place of places | async" class="col-md-4">
+      <div class="frame">
+        <div class="pictureOfPlace">
+          <img src="{{place.imageUrl}}" alt="imageUrl" class="rounded">
+        </div>
+        <br>
+        <div class="nameOfPlace">
+          <button type="button" name="button" class="btn btn-light"><h5 (click)="goToDetailPage(place)"><em>{{place.name}}</em></h5></button>
+        </div>
 
-<div *ngFor="let place of places | async" class="panel panel-default">
-  <div class="panel-body">
-    <h3 (click)="goToDetailPage(place)"><em>{{place.name}}</em></h3>
-    <div *ngIf="currentRoute === '/admin'">
-    <p>{{place.description}}</p>
-    <hr>
-      <app-edit-place [selectedPlace]="place"></app-edit-place>
+        <div *ngIf="currentRoute === '/admin'">
+        <p>{{place.description}}</p>
+        <hr>
+          <app-edit-place [selectedPlace]="place"></app-edit-place>
+        </div>
+      </div>
     </div>
-  </div>
 </div>

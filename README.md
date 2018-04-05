@@ -29,6 +29,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 touch a file with name
 src/app/api-keys.ts
 paste this in src/app/api-keys.ts
+
 export var masterFirebaseConfig = {
   apiKey: "AIzaSyCc562cwVzLjJWahbNGtno2RqI9udA2pQw",
   authDomain: "vacation-places-d594e.firebaseapp.com",
