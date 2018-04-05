@@ -1,6 +1,6 @@
- <div>
- <h3>{{(placeToDisplay | async)?.imageUrl}}</h3>
- <p><a href="{{(placeToDisplay | async)?.wikiUrl}}">{{(placeToDisplay | async)?.wikiUrl}}</a></p>
- <p>{{(placeToDisplay | async)?.name}}</p>
- <p>{{(placeToDisplay | async)?.description}}</p>
- </div>
+<div class="container">
+   <h3><a href="{{(placeToDisplay | async)?.imageUrl}}"><img width="500"  class="img-responsive" src="{{(placeToDisplay | async)?.imageUrl}}"></a></h3>
+   <h3>{{(placeToDisplay | async)?.name}}</h3>
+   <p>{{(placeToDisplay | async)?.description}}</p>
+   <p><a href="{{(placeToDisplay | async)?.wikiUrl}}">Explore more</a></p>
+</div>

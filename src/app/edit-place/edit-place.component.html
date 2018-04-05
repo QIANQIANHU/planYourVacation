@@ -1,0 +1,18 @@
+<h4>Edit Place</h4>
+
+<label>New Place Picture:</label>
+<input [(ngModel)]="selectedPlace.imageUrl">
+<br>
+
+<label>New Place Info:</label>
+<input [(ngModel)]="selectedPlace.wikiUrl">
+<br>
+
+<label>New Place Name:</label>
+<input [(ngModel)]="selectedPlace.name">
+<br>
+
+<label>New Place Description:</label>
+<input [(ngModel)]="selectedPlace.description">
+
+<button (click)="beginUpdatingPlace(selectedPlace)">Update</button>

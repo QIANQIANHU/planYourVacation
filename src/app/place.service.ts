@@ -24,4 +24,13 @@ export class PlaceService {
     //   }
     // }
   }
+
+  updatePlace(localUpdatedPlace)
+  {
+    var placeEntryInFirebase = this.getPlaceById(localUpdatedPlace.$key);
+    placeEntryInFirebase.update({imageUrl: localUpdatedPlace.imageUrl,
+                                wikiUrl: localUpdatedPlace.wikiUrl,
+                                name: localUpdatedPlace.name,
+                                description: localUpdatedPlace.description});
+  }
 }

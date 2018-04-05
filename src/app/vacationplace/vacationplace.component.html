@@ -2,9 +2,13 @@
   Here's some ideas about places you might like to visit, even for 5 minutes!
 </p>
 
-<div *ngFor="let place of places | async" (click)="goToDetailPage(place)" class="panel panel-default">
+<div *ngFor="let place of places | async" class="panel panel-default">
   <div class="panel-body">
-    <h3><em>{{place.name}}</em></h3>
+    <h3 (click)="goToDetailPage(place)"><em>{{place.name}}</em></h3>
+    <div *ngIf="currentRoute === '/admin'">
     <p>{{place.description}}</p>
+    <hr>
+      <app-edit-place [selectedPlace]="place"></app-edit-place>
+    </div>
   </div>
 </div>

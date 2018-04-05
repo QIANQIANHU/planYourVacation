@@ -12,6 +12,7 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdminComponent } from './admin/admin.component';
+import { EditPlaceComponent } from './edit-place/edit-place.component';
 // import { AdminComponent } from './admin/admin.component';
 // import { EditPlaceComponent } from './edit-place/edit-place.component';
 
@@ -30,6 +31,7 @@ export const firebaseConfig = {
     VacationplaceComponent,
     PlaceDetailComponent,
     AdminComponent,
+    EditPlaceComponent,
     // AdminComponent,
     // EditPlaceComponent
   ],
