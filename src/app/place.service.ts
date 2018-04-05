@@ -33,4 +33,9 @@ export class PlaceService {
                                 name: localUpdatedPlace.name,
                                 description: localUpdatedPlace.description});
   }
+
+  deletePlace(localPlaceToDelete){
+  var placeEntryInFirebase = this.getPlaceById(localPlaceToDelete.$key);
+  placeEntryInFirebase.remove();
+}
 }

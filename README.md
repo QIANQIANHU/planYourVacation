@@ -25,3 +25,16 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+touch a file with name
+src/app/api-keys.ts
+paste this in src/app/api-keys.ts
+export var masterFirebaseConfig = {
+  apiKey: "AIzaSyCc562cwVzLjJWahbNGtno2RqI9udA2pQw",
+  authDomain: "vacation-places-d594e.firebaseapp.com",
+  databaseURL: "https://vacation-places-d594e.firebaseio.com",
+  projectId: "vacation-places-d594e",
+  storageBucket: "vacation-places-d594e.appspot.com",
+  messagingSenderId: "57103135633"
+
+};

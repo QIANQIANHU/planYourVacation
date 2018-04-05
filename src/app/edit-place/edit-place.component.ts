@@ -20,4 +20,10 @@ export class EditPlaceComponent implements OnInit {
     this.placeService.updatePlace(placeToUpdate);
   }
 
+  beginDeletingPlace(placeToDelete){
+  if(confirm("Are you sure you want to delete this item from the list?")){
+    this.placeService.deletePlace(placeToDelete);
+  }
+}
+
 }
